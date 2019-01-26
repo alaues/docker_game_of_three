@@ -66,3 +66,12 @@ exit
  ```
 
 7. Now you can start using application! Navigate your browser to http://yoursite:2121 to see the application
+
+### Tests
+
+Few tests of `App\Game` class are available and can be run with next command
+
+```
+docker exec -it php_task_apache_1 bash
+vendor/bin/phpunit tests
+```
