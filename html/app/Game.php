@@ -96,14 +96,11 @@ class Game extends Model
         }
 
         $this->save();
-
         /* send events */
         event(new MoveSubmittedNotification($move));
         event(new GameStatusNotification($this));
 
-        if ($this->score === 1) {
-            event(new NextMoveNotification( new Player() ));
-        } else {
+        if ($this->score !== 1) {
             /* find who's move is next */
             $players = array_values(array_filter($players, function ($p) use ($player) {
                 return $p->id != $player->id;

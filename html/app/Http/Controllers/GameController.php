@@ -15,6 +15,7 @@ use App\Game;
 use App\Player;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class GameController extends Controller
 {
@@ -176,6 +177,7 @@ class GameController extends Controller
         try {
             $game->createMove($player, $step);
         } catch (GameMoveException $e){
+            Log::debug($e->getMessage());
             flash($e->getMessage())->error();
             return redirect('/game/' . $game->id);
         }
