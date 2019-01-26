@@ -54,9 +54,15 @@ with parameters that I sent you in email
 $ docker exec -it php_task_apache_1 bash
 $ php composer.phar install
 ```
-5. Execute database migrations
+5. Execute database migrations and exit
 ```
 $ php artisan migrate
+exit
 ```
+6. Change owner of `storage` directory to `www-data`
 
-5. Now you can start using application! Navigate your browser to http://yoursite:2121 to see the application
+```
+ sudo chown www-data.www-data storage -R
+ ```
+
+7. Now you can start using application! Navigate your browser to http://yoursite:2121 to see the application
