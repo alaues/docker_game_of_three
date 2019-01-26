@@ -60,4 +60,4 @@ $ docker exec -it php_task_apache_1 bash
 $ php artisan migrate
 ```
 
-5. Now you can start using application! Head to http://localhost:2121 to see the application
+5. Now you can start using application! Navigate your browser to http://yoursite:2121 to see the application
