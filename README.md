@@ -1,6 +1,6 @@
 # Game of Three
 
-This is my coding challenge task named as Game of Three
+This is containerized PHP application based on Laravel 5.7 for task Game of Three
 
 ## Requirements for installation
 * Docker, with docker-compose tool
