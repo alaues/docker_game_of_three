@@ -4,7 +4,7 @@ This is my coding challenge task named as Game of Three
 
 ## Requirements for installation
 * Docker, with docker-compose tool
-* Mysql, with `REFERENCES` privileges user
+* Mysql, with pre-created database and `REFERENCES` privileges user
 
 ## Installation
 1. clone this repository
@@ -17,6 +17,7 @@ $ cd php_task
 $ docker-compose up -d
 ```
 it will start docker container with PHP 7.2 and Apache listening on 2121 port, I hope it's not used :)
+
 check that container is started and listening on 2121 port
 ```
 $ docker ps
