@@ -51,12 +51,12 @@ with parameters that I sent you in email
 
 4. Next, install the dependencies with composer in `html` directory
 ```
-$ docker exec -it CONTAINER_NAME bash
+$ docker exec -it php_task_apache_1 bash
 $ php composer.phar install
 ```
 5. Execute database migrations
 ```
-$ docker exec -it CONTAINER_NAME bash
+$ docker exec -it php_task_apache_1 bash
 $ php artisan migrate
 ```
 
