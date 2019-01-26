@@ -56,7 +56,6 @@ $ php composer.phar install
 ```
 5. Execute database migrations
 ```
-$ docker exec -it php_task_apache_1 bash
 $ php artisan migrate
 ```
 
