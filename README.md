@@ -25,7 +25,7 @@ CONTAINER ID IMAGE  COMMAND  CREATED STATUS  PORTS   NAMES
 dc4b7c7574ef IMAGE_NAME "docker-php-entrypoi…" 3 days ago  Up 3 days  2121/tcp, 0.0.0.0:2121->80/tcp CONTAINER NAME
 ```
 
-3. Fill DB_* parameters in  `html/.env` file (if you don't have available mysql server, you can use credentials that I sent you in email)
+3. Fill `DB_*` parameters in  `html/.env` file (if you don't have available mysql server, you can use credentials that I sent you in email)
 
 ```
 DB_CONNECTION=mysql
@@ -40,7 +40,7 @@ make sure that
 BROADCAST_DRIVER=pusher
 ```
 
-also fill PUSHER_ parameters 
+also fill `PUSHER_` parameters 
 ```
 PUSHER_APP_KEY=""
 PUSHER_APP_CLUSTER="eu"
