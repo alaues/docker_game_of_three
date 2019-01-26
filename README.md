@@ -20,9 +20,9 @@ it will start docker container with PHP 7.2 and Apache listening on 2121 port, I
 
 check that container is started and listening on 2121 port
 ```
-$ docker ps
-CONTAINER ID IMAGE  COMMAND  CREATED STATUS  PORTS   NAMES
-dc4b7c7574ef IMAGE_NAME "docker-php-entrypoi…" 3 days ago  Up 3 days  2121/tcp, 0.0.0.0:2121->80/tcp CONTAINER NAME
+root@almat:/var/www/php_task# docker ps
+CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                            NAMES
+406fbf475e47        php_task_apache        "docker-php-entrypoi…"   25 seconds ago      Up 6 seconds        2121/tcp, 0.0.0.0:2121->80/tcp   php_task_apache_1
 ```
 
 3. Fill `DB_*` parameters in  `html/.env` file (if you don't have available mysql server, you can use credentials that I sent you in email)
