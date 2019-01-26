@@ -40,7 +40,7 @@ make sure that
 BROADCAST_DRIVER=pusher
 ```
 
-also fill `PUSHER_` parameters 
+also fill `PUSHER_APP_*` parameters 
 ```
 PUSHER_APP_KEY=""
 PUSHER_APP_CLUSTER="eu"
