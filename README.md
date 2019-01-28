@@ -4,7 +4,7 @@ This is containerized PHP application based on Laravel 5.7 for task Game of Thre
 
 ## Requirements for installation
 * Docker, with docker-compose tool
-* Mysql, with pre-created database and `REFERENCES` privileges user
+* Mysql server, with pre-created database and `REFERENCES` privileges user
 
 ## Installation
 1. clone this repository
